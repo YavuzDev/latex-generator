@@ -21,15 +21,11 @@ public class MathExample {
         displayMath.addCharacter('z');
         displayMath.addPowerOf('n');
 
-
         var squareRootExpression = new SquareRootExpression();
         squareRootExpression.addText("5 + 5");
         displayMath.addSquareRoot(squareRootExpression);
 
-        displayMath.addCharacter(' ');
-
         document.add(displayMath);
-
 
         var inlineMath = new InlineMathExpression();
         inlineMath.addCharacter('x');
