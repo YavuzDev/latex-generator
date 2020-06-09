@@ -10,6 +10,6 @@ public class InlineMathExpression extends MathNode {
 
     @Override
     public String getAsString() {
-        return "\\begin{math}\n" + getStringBuilder() + "\\end{math}\n";
+        return "\\begin{math}\n" + getStringBuilder() + "\n\\end{math}\n";
     }
 }

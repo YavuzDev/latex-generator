@@ -16,8 +16,8 @@ abstract class MathNode extends LatexNode {
         stringBuilder.append(character);
     }
 
-    public void addSquareRoot(String text) {
-        stringBuilder.append("\\sqrt{").append(text).append("}");
+    public void addSquareRoot(SquareRootExpression squareRootExpression) {
+        stringBuilder.append(squareRootExpression.getAsString());
     }
 
     public void addText(String text) {

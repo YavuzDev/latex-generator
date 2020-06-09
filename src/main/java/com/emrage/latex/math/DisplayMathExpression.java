@@ -10,6 +10,6 @@ public class DisplayMathExpression extends MathNode {
 
     @Override
     public String getAsString() {
-        return "\\begin{displaymath}\n" + getStringBuilder() + "\\end{dsplaymath}\n";
+        return "\\begin{displaymath}\n" + getStringBuilder() + "\n\\end{displaymath}\n";
     }
 }
