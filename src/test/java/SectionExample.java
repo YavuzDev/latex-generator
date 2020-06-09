@@ -1,6 +1,7 @@
 import com.emrage.latex.LatexDocument;
 import com.emrage.latex.section.Section;
 import com.emrage.latex.section.SubSection;
+import com.emrage.latex.section.SubSubSection;
 import com.emrage.latex.text.Text;
 
 import java.io.IOException;
@@ -25,7 +26,7 @@ public class SectionExample {
         subSectionText.addln("Sub section");
         document.add(subSection);
 
-        var subSubSection = new SubSection("Sub Sub section");
+        var subSubSection = new SubSubSection("Sub Sub section");
         var subSubSectionText = new Text();
         subSubSectionText.addln("Sub Sub section");
         document.add(subSubSection);
