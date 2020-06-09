@@ -34,7 +34,7 @@ public class Image extends LatexNode {
         );
         attributes.append("[");
         values.forEach((key, value) -> {
-            if (value.intValue() != 0) {
+            if (value.doubleValue() != 0) {
                 attributes.append(key).append("=").append(value).append(" ");
             }
         });
