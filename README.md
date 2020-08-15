@@ -2,6 +2,8 @@ Java Library used for generating .tex and .bib files.
 
 #  Example
 
+The following code will generate the following latex files.
+
 ```java
 import com.emrage.latex.LatexDocument;
 import com.emrage.latex.bib.Bibliography;
@@ -33,6 +35,30 @@ public class BibliographyExample {
     }
 }
 
+```
+
+## bibliography.bib:
+
+```
+@article{test,
+	author = 	 "Test",
+	title = 	 "Test title",
+}
+```
+
+## test.tex:
+
+```
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\flushleft
+\par
+This is a paragraph \cite{test}
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+\end{document}
 ```
 
 More examples can be found in the src/test directory.

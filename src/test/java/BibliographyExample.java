@@ -24,6 +24,6 @@ public class BibliographyExample {
         paragraph.addln("This is a paragraph " + bibliography.cite("test"));
         document.add(paragraph);
 
-        document.save(Path.of("test"));
+        document.save(Path.of("generated"));
     }
 }
